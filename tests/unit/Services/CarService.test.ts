@@ -27,7 +27,7 @@ describe('Test Service layer', function () {
     expect(response).to.be.deep.equal({ ...validCar, id: '000001' });
   });
 
-  it('error message if there is no car with the entered ID', async function () {
+  it('error message id car', async function () {
     Sinon.stub(CarsODM.prototype, 'getById').resolves(null);
     const id = '634852326b35b59438fbea2f';
 
